@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>NEURO-X // Cyberpunk AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Background Effects -->
+  <div class="grid-bg"></div>
+  <div class="scanline"></div>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">NEURO<span>_X</span></div>
+    <div class="status"><span class="dot"></span> SYSTEM ONLINE</div>
+  </header>
+
+  <!-- Chat Container -->
+  <main class="console-wrap">
+    <div class="console">
+      <div class="console-bar">
+        <span class="b r"></span><span class="b y"></span><span class="b g"></span>
+        <span class="title">neural_link.exe</span>
+      </div>
+
+      <div class="chat" id="chat">
+        <div class="msg ai">
+          <div class="avatar">◆</div>
+          <div class="text">Sistem aktif. Saya NEURO-X, asisten AI kamu. Ada yang bisa saya bantu, Netrunner?</div>
+        </div>
+      </div>
+
+      <div class="input-area">
+        <div class="input-wrapper">
+          <span class="prompt">&gt;</span>
+          <textarea id="input" rows="1" placeholder="Ketik pesan di sini..." autocomplete="off"></textarea>
+        </div>
+        <button id="send" aria-label="Kirim">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
